@@ -1,0 +1,16 @@
+{
+  "name": "ClickBeard",
+  "short_name": "ClickBeard",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "type": "image/png",
+      "sizes": "500x500"
+    }
+  ],
+  "background_color": "#351B0C",
+  "description": "O barbeiro certo para o homem moderno 💈",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#06092B"
+}
