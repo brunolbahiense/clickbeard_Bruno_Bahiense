@@ -18,8 +18,12 @@ export const Wrapper = styled.main`
 
 export const HeroDiv = styled.div`
   background-image: url('/img/hero-img.png');
+  background-size: cover;
   height: 100%;
   width: 60vw;
+  @media only screen and (max-width: 960px) {
+    display: none;
+  }
 `
 
 export const Title = styled.h1`
