@@ -5,7 +5,7 @@ import * as S from './styles'
 import Link from 'next/link'
 
 const Login = () => {
-  const [email, setEmail] = useState('')
+  const [name, setName] = useState('')
   const [password, setPassword] = useState('')
   /*
   const dispatch = useDispatch()
@@ -15,7 +15,6 @@ const Login = () => {
     dispatch(
       login({
         name,
-        email,
         password,
         loggedIn: true
       })
@@ -27,10 +26,10 @@ const Login = () => {
       <S.LoginForm /* onSubmit={(e) => handleSubmit(e)} */>
         <S.Title>LOGIN</S.Title>
         <S.Input
-          type="email"
-          placeholder="e-mail"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          type="name"
+          placeholder="Usuario"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
         <S.Input
           type="password"
@@ -38,7 +37,9 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <S.Button type="submit">ENTRAR</S.Button>
+        <Link href="/user">
+          <S.Button type="submit">ENTRAR</S.Button>
+        </Link>
         <S.Signin>
           cadastre-se
           <Link href="/signin">

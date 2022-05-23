@@ -53,7 +53,7 @@ export const Signin = styled.p`
   text-decoration: none;
   padding: 17px 30px;
   margin-top: 30px;
-  color: ${(props) => props.theme.silver};
+  color: ${(props) => props.theme.gray};
   border: none;
   font-size: 24px;
   font-family: 'Ibarra Real Nova', serif;

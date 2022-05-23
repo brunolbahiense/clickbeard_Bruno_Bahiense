@@ -58,12 +58,6 @@ export const BookSelector = styled.select`
   margin: 0 2em;
   margin-bottom: 4em;
 `
-
-export const Title = styled.h1`
-  font-size: 4em;
-  font-family: 'Ibarra Real Nova', serif;
-  font-family: 'Old Standard TT', serif;
-`
 export const Button = styled.button`
   padding: 17px 30px;
   margin-top: 30px;

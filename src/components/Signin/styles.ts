@@ -49,3 +49,19 @@ export const Button = styled.button`
     background-color: ${(props) => props.theme.mainLight};
   }
 `
+
+export const Login = styled.p`
+  text-decoration: none;
+  padding: 17px 30px;
+  margin-top: 30px;
+  color: ${(props) => props.theme.gray};
+  border: none;
+  font-size: 24px;
+  font-family: 'Ibarra Real Nova', serif;
+  font-family: 'Old Standard TT', serif;
+`
+export const Anchor = styled.span`
+  color: ${(props) => props.theme.main};
+  font-weight: 700;
+  cursor: pointer;
+`

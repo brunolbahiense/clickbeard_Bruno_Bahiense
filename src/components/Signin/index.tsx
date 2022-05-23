@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import * as S from './styles'
+import Link from 'next/link'
 
 const Signin = () => {
   const [name, setName] = useState('')
@@ -29,6 +30,12 @@ const Signin = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <S.Button type="submit">CADASTRAR</S.Button>
+        <S.Login>
+          Já possui cadastro? Retorne
+          <Link href="/">
+            <S.Anchor> aqui</S.Anchor>
+          </Link>
+        </S.Login>
       </S.SigninForm>
     </S.Signin>
   )
